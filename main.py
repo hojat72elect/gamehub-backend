@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 import csv
 
 def main():
-    total_pages = 1
+    total_pages = 400
     url = "https://www.gamespot.com/news/?page="
 
-    with open('gamespot_news.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open('database/gamespot_news/gamespot_news.csv', 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['title', 'link', 'image_url']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
